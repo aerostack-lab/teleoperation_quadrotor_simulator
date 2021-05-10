@@ -1,0 +1,107 @@
+repositories:
+
+#----------------------------------------------------------------------------
+# Messages
+#----------------------------------------------------------------------------
+  messages/aerostack_msgs:
+    type: git 
+    url: https://github.com/aerostack/aerostack_msgs
+    version: master
+
+#----------------------------------------------------------------------------
+# Behaviors
+#----------------------------------------------------------------------------
+
+  behaviors/quadrotor_motion_with_pid_control:
+    type: git 
+    url: https://github.com/aerostack/quadrotor_motion_with_pid_control
+    version: master
+
+#----------------------------------------------------------------------------
+# Simulation
+#----------------------------------------------------------------------------
+  simulation/quadrotor_simulator:
+    type: git 
+    url: https://github.com/aerostack/quadrotor_simulator
+    version: master
+
+#----------------------------------------------------------------------------
+# User interface
+#----------------------------------------------------------------------------
+  user_interface/alphanumeric_viewer:
+    type: git 
+    url: https://github.com/aerostack/alphanumeric_viewer
+    version: master
+  user_interface/keyboard_teleoperation_with_pid_control:
+    type: git 
+    url: https://github.com/aerostack/keyboard_teleoperation_with_pid_control
+    version: master 
+
+#----------------------------------------------------------------------------
+# Libraries
+#    ¿Quizá se pueden poner grupos de librerias en un sólo repo?
+#----------------------------------------------------------------------------
+  libraries/behaviorlib:
+    type: git 
+    url: https://github.com/cvar-upm/behaviorlib
+    version: master
+  libraries/robot_process:
+    type: git 
+    url: https://github.com/aerostack/robot_process
+    version: master
+  #----------------------------------------------------------------------------
+  # Agrupar estos dos en catkin?
+  #----------------------------------------------------------------------------
+  libraries/catkin_simple:
+    type: git
+    url: https://github.com/aerostack/catkin_simple
+    version: master
+  libraries/eigen_catkin:
+    type: git 
+    url: https://github.com/aerostack/eigen_catkin
+    version: master
+  #----------------------------------------------------------------------------
+  # Agrupar estos dos en cvglib?
+  #----------------------------------------------------------------------------
+  libraries/lib_cvgekf:
+    type: git 
+    url: https://github.com/aerostack/lib_cvgekf
+    version: master
+  libraries/lib_cvgutils:
+    type: git 
+    url: https://github.com/aerostack/lib_cvgutils
+    version: master
+  #----------------------------------------------------------------------------
+  # Sin agrupar 
+  #----------------------------------------------------------------------------
+  libraries/pugixml:
+    type: git 
+    url: https://github.com/aerostack/pugixml
+    version: master
+  #----------------------------------------------------------------------------
+  # Candidatos a borrar
+  #----------------------------------------------------------------------------
+
+  libraries/ros_utils_lib:
+    type: git 
+    url: https://bitbucket.org/visionaerialrobotics/ros_utils_lib
+    version: master  
+
+#----------------------------------------------------------------------------
+# Deprecated libraries
+#----------------------------------------------------------------------------
+  deprecated/libraries/drone_process:
+    type: git 
+    url: https://github.com/aerostack/drone_process
+    version: master
+  deprecated/libraries/dronemoduleros:
+    type: git 
+    url: https://github.com/aerostack/dronemoduleros
+    version: master
+#----------------------------------------------------------------------------
+# Deprecated messages
+#----------------------------------------------------------------------------
+  deprecated/messages/dronemsgsros:
+    type: git 
+    url: https://github.com/aerostack/dronemsgsros
+    version: master
