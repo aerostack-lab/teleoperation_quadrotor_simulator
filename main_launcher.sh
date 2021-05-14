@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NUMID_DRONE=107
-export AEROSTACK_PROJECT=${AEROSTACK_STACK}/projects/teleoperation_quadrotor_simulator
+export APPLICATION_PATH=${PWD}
 
 . ${AEROSTACK_STACK}/config/mission/setup.sh
 
@@ -15,8 +15,8 @@ gnome-terminal  \
 --tab --title "Quadrotor Simulator" --command "bash -c \"
 roslaunch quadrotor_simulator_process quadrotor_simulator.launch --wait \
     robot_namespace:=drone$NUMID_DRONE \
-    robot_config_path:=${AEROSTACK_PROJECT}/configs/drone$NUMID_DRONE \
-    rviz_config_path:=${AEROSTACK_PROJECT}/configs/rviz_files;
+    robot_config_path:=${APPLICATION_PATH}/configs/drone$NUMID_DRONE \
+    rviz_config_path:=${APPLICATION_PATH}/configs/rviz_files;
 exec bash\""  \
 `#---------------------------------------------------------------------------------------------` \
 `# Quadrotor Motion With PID Control                                                           ` \
@@ -24,7 +24,7 @@ exec bash\""  \
 --tab --title "Quadrotor Motion With PID Control" --command "bash -c \"
 roslaunch quadrotor_motion_with_pid_control quadrotor_motion_with_pid_control.launch --wait \
     namespace:=drone$NUMID_DRONE \
-    robot_config_path:=${AEROSTACK_PROJECT}/configs/drone$NUMID_DRONE \
+    robot_config_path:=${APPLICATION_PATH}/configs/drone$NUMID_DRONE \
     uav_mass:=0.7;
 exec bash\""  &
 
