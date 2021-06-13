@@ -24,4 +24,4 @@ In order to teleoperate a drone with the quadrotor simulator perform the followi
 
 This video shows the execution of teleoperation:
 
-[ ![Teleoperation](https://i.ibb.co/1vgr3Zm/teleoperation-quadrotor-simulator-v2-Moment.jpg)](https://youtu.be/Ec75-B5omZ0)
+[ ![Teleoperation](https://i.ibb.co/1vgr3Zm/teleoperation-quadrotor-simulator-v2-Moment.jpg)](https://www.youtube.com/watch?v=IEW-Nyngm3A)
